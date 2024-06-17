@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@400;600;800&display=swap");
-body {
+body, #root {
   background-color: #E5E5E5;
   font-family: "Karla", sans-serif;
   font-size: 1rem;
@@ -265,7 +265,7 @@ section h2 {
 
 .section-links {
   margin: 0;
-  color: transparent;
+  display: none;
 }
 
 .hide {

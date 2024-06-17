@@ -1,6 +1,10 @@
 function SecContact() {
     return (
-        <div class="section-links" id="contact-link">contact section
+        <div class="section-group" id="contact-link">
+            <div className="section-links">
+                contact section
+            </div>
+            
             <section id="contact-me">
                 <h2>Contact me!</h2>
                 <div id="socials" >

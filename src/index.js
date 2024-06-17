@@ -7,19 +7,26 @@ import './assets/css/styles.css'
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import Navbar from './components/navbar';
-import SecAboutMe from './components/little-sections/sec-about-me';
-import SecSkills from './components/little-sections/sec-skills';
-import SecContact from './components/little-sections/sec-contact';
+import Navbar from './components/page-structure/navbar';
+import HiHeader from './components/page-structure/hi-header';
+import SecHeadshot from './components/page-structure/sec-headshot';
+import SecContainer from './components/little-sections/sec-container';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <Navbar/>
-    <SecAboutMe/>
-    <SecSkills/>
-    <SecContact/>
+    <div class="container">
+      <HiHeader/>
+      {/* left side */}            
+        <SecHeadshot/>
+      {/* right side */}
+      <div class="col-12 right-side ">
+        <Navbar/>
+          <SecContainer/>
+      </div>  
+
+    </div>
   </React.StrictMode>
 );
 

@@ -19,7 +19,7 @@ $dark-purple: #330036;
 //basics 
 // ====================================================================================
 
-body{
+body,#root {
     background-color: $grey;
     font-family: $karla;
     font-size: $font-size;
@@ -350,7 +350,7 @@ section h2 {
 
 .section-links {
     margin: 0;
-    color: transparent;
+    display: none;
 }
 
 // ====================================================================================
