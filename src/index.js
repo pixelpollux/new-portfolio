@@ -1,13 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import './assets/css/styles.css'
+// import App from './App';
+
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.css';
+
+import Navbar from './components/navbar';
+import SecAboutMe from './components/little-sections/sec-about-me';
+import SecSkills from './components/little-sections/sec-skills';
+import SecContact from './components/little-sections/sec-contact';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <Navbar/>
+    <SecAboutMe/>
+    <SecSkills/>
+    <SecContact/>
   </React.StrictMode>
 );
 
