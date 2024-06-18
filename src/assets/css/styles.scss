@@ -19,7 +19,7 @@ $dark-purple: #330036;
 //basics 
 // ====================================================================================
 
-body{
+body,#root {
     background-color: $grey;
     font-family: $karla;
     font-size: $font-size;
@@ -80,14 +80,14 @@ a:hover {
     // text-align: center;
 }
 
-.button_slide {
+button.button_slide {
     color: $grey;
     border-radius: 10px;
     padding: 6px 10px;
     display: inline-block;
     font-weight: 600;
     font-family: $montserrat;
-    margin-right: 1rem;
+    // margin-right: 1rem;
     letter-spacing: 2px;
     cursor: pointer;
     background-color: $dark-purple;
@@ -97,7 +97,8 @@ a:hover {
     transition: ease-out 0.4s;
 }
 
-.slide_right:hover {
+button.slide_right:hover {
+    background-color: $dark-purple;
     box-shadow: inset 0 0 0 50px $dark-purple;
     border: 1px $electric-lemon solid;
 	color: $electric-lemon;
@@ -131,7 +132,7 @@ a:hover {
 	margin: 0;
     font-family: $montserrat, sans-serif;
     font-weight: 900;
-    margin-top: 3rem;
+    padding-top: 3rem;
     text-align: center;
 
 	&--stroke {
@@ -350,7 +351,7 @@ section h2 {
 
 .section-links {
     margin: 0;
-    color: transparent;
+    display: none;
 }
 
 // ====================================================================================
@@ -435,10 +436,9 @@ section#certifications h3{
         font-size: 2rem;
     }
 
-    ul li a{
-        color: $electric-pink;
-    }
-    
+    // ul li a{
+    //     color: $electric-pink;
+    // } 
 }
 
 input{
@@ -520,9 +520,6 @@ form#contact-form textarea {
         text-align: left;
         font-size: 2.5rem;
     }
-    #contact-me ul li {
-        padding-right: 3rem;
-    }
 }
 @media only screen and (min-width: 600px) {
     .heading {
@@ -549,9 +546,10 @@ form#contact-form textarea {
     #contact-me ul li {
         display: inline;
         font-size: 2rem;
+        padding-right: 3rem;
     }
 
-    #contact-me ul li a{
+    #contact-me ul li a {
         color: $dark-purple;
         text-decoration: none;
     }
