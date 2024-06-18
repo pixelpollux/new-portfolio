@@ -1,6 +1,6 @@
 function SecSkills() {
     return (    
-        <div class="section-group" id="skills-link">
+        <div className="section-group" id="skills-link">
             <div className="section-links">
                 skills section
             </div>

@@ -16,12 +16,12 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     {/* <App /> */}
-    <div class="container">
+    <div className="container">
       <HiHeader/>
       {/* left side */}            
         <SecHeadshot/>
       {/* right side */}
-      <div class="col-12 right-side ">
+      <div className="col-12 right-side ">
         <Navbar/>
           <SecContainer/>
       </div>  

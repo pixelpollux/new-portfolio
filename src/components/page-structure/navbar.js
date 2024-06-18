@@ -5,33 +5,33 @@
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg sticky-top navbar-light shift">
-            <div class="container">
-                <a class="navbar-brand" href="#">home</a>
+            <div className="container">
+                <a className="navbar-brand" href="#">home</a>
                 {/* collapse button */}
                 <button 
-                    class="navbar-toggler navbar-toggler-right" 
+                    className="navbar-toggler navbar-toggler-right" 
                     type="button" 
                     data-toggle="collapse"
                     data-target="#navbar-content">
-                    <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
                 {/*content to be collapsed */}
-                <div class="collapse navbar-collapse" id="navbar-content">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link"  data-toggle="collapse" data-target="#navbar-collapse" href="#about-me-link">about me</a>
+                <div className="collapse navbar-collapse" id="navbar-content">
+                    <ul className="navbar-nav">
+                        <li className="nav-item">
+                            <a className="nav-link"  data-toggle="collapse" data-target="#navbar-collapse" href="#about-me-link">about me</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#projects-link">projects</a>
+                        <li className="nav-item">
+                            <a className="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#projects-link">projects</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#certifications-link">certifications</a>
+                        <li className="nav-item">
+                            <a className="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#certifications-link">certifications</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#contact-link">contact me</a>
+                        <li className="nav-item">
+                            <a className="nav-link" data-toggle="collapse" data-target="#navbar-collapse" href="#contact-link">contact me</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" target="_blank" data-toggle="collapse" data-target="#navbar-collapse" href="assets/resume322021.pdf">resumé</a>
+                        <li className="nav-item">
+                            <a className="nav-link" target="_blank" data-toggle="collapse" data-target="#navbar-collapse" href="assets/resume322021.pdf">resumé</a>
                         </li>
                     </ul>
                 </div>

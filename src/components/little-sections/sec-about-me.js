@@ -1,6 +1,6 @@
 function SecAboutMe() {
     return (
-        <div class="section-group" id="about-me-link">
+        <div className="section-group" id="about-me-link">
             <div className="section-links">
                 about me section
             </div>
