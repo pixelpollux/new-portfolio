@@ -50,14 +50,13 @@ a:hover {
   justify-content: space-between;
 }
 
-.button_slide {
+button.button_slide {
   color: #E5E5E5;
   border-radius: 10px;
   padding: 6px 10px;
   display: inline-block;
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
-  margin-right: 1rem;
   letter-spacing: 2px;
   cursor: pointer;
   background-color: #330036;
@@ -67,7 +66,8 @@ a:hover {
   transition: ease-out 0.4s;
 }
 
-.slide_right:hover {
+button.slide_right:hover {
+  background-color: #330036;
   box-shadow: inset 0 0 0 50px #330036;
   border: 1px #EDFF00 solid;
   color: #EDFF00;
@@ -79,7 +79,7 @@ a:hover {
   margin: 0;
   font-family: "Montserrat", sans-serif, sans-serif;
   font-weight: 900;
-  margin-top: 3rem;
+  padding-top: 3rem;
   text-align: center;
 }
 .heading--stroke {
@@ -328,9 +328,6 @@ section#certifications h3 {
 [id=contact-me] ul li {
   font-size: 2rem;
 }
-[id=contact-me] ul li a {
-  color: #fe019a;
-}
 
 input {
   width: 100%;
@@ -399,9 +396,6 @@ form#contact-form textarea {
     text-align: left;
     font-size: 2.5rem;
   }
-  #contact-me ul li {
-    padding-right: 3rem;
-  }
 }
 @media only screen and (min-width: 600px) {
   .heading {
@@ -422,6 +416,7 @@ form#contact-form textarea {
   #contact-me ul li {
     display: inline;
     font-size: 2rem;
+    padding-right: 3rem;
   }
   #contact-me ul li a {
     color: #330036;
