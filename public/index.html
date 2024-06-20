@@ -35,23 +35,7 @@
     <!-- font awesome import -->
     <script src="https://kit.fontawesome.com/7c2dee5282.js" crossorigin="anonymous"></script>
 
-    <script>
-      jQuery(document).ready(function(){
-        $('.navbar-collapse a').click(function(){
-                $(".navbar-collapse").toggleClass('in');
-        });
-      });
 
-      clickHideButton = () => {
-        var x = document.getElementById("extended-bio");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-
-    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -67,4 +51,20 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    // jQuery(document).ready(function(){
+    //   $('.navbar-collapse a').click(function(){
+    //           $(".navbar-collapse").toggleClass('in');
+    //   });
+    // });
+
+    clickHideButton = () => {
+      var x = document.getElementById("extended-bio").style.display;
+      if (x === "none") {
+        x = "block";
+      } else {
+        x = "none";
+      }
+    }
+  </script>
 </html>
