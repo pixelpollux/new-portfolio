@@ -305,6 +305,10 @@ nav.navbar-light{
     display: inline-block!important;
 }
 
+.navbar-nav {
+    display: block;
+}
+
 #navbar-content a{
     font-family: $montserrat;
     // font-size: 1rem;
@@ -536,7 +540,6 @@ form#contact-form textarea {
 
     section#certifications h3{
         letter-spacing: .2rem;
-    
     }
 
     #contact-me ul{
