@@ -1,6 +1,6 @@
 import headshot from '../../../src/assets/images/headshot.JPG' 
 
-function SecHeadshot() {
+function SectionHeadshot() {
     return (
         <div className="sticky-top col-lg-4  d-none d-xl-block float-start">
             <img id="headshot" src={headshot} alt="headshot of me"/>
@@ -9,4 +9,4 @@ function SecHeadshot() {
     )
 };
 
-export default SecHeadshot;
+export default SectionHeadshot;

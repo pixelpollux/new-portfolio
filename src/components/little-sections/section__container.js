@@ -3,7 +3,7 @@ import SectionSkills from './section__skills';
 import SectionContact from './section__contact';
 import SectionResume from './section__resume';
 
-function SecContainer() {
+function SectionContainer() {
     return (
         <>       
             <div className="row">
@@ -19,4 +19,4 @@ function SecContainer() {
     )
 };
 
-export default SecContainer;
+export default SectionContainer;
