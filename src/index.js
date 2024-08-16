@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 
 import Navbar from './components/page-structure/navbar';
 import HiHeader from './components/page-structure/hi-header';
-import SecHeadshot from './components/page-structure/sec-headshot';
-import SecContainer from './components/little-sections/sec-container';
+import SectionHeadshot from './components/page-structure/sec-headshot';
+import SectionContainer from './components/little-sections/section__container';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,11 +19,11 @@ root.render(
     <div className="container">
       <HiHeader/>
       {/* left side */}            
-        <SecHeadshot/>
+        <SectionHeadshot/>
       {/* right side */}
       <div className="col-12 right-side ">
         <Navbar/>
-          <SecContainer/>
+          <SectionContainer/>
       </div>  
 
     </div>
