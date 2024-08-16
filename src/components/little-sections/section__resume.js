@@ -14,7 +14,9 @@ export default function SectionResume() {
                 resume section
             </div>
             <section id="resume-section">
-                <div className='title-group title-group__resume'>
+                <div 
+                    style={{ marginBottom: isVisible ? '': "0" }}
+                    className={`title-group title-group__resume ${isVisible ? 'visible' : 'not'}`}>
                     <h2>Résumé</h2>
                     {/* <p>
                         Here i'll put my resume shortly.
