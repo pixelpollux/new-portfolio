@@ -28,6 +28,35 @@ body,#root {
     // background-repeat: repeat;
 }
 
+.section-group{
+    h2 {
+        font-family: $montserrat;
+        text-transform: lowercase;
+        margin-bottom: 0;
+        font-weight: 900;
+        font-size: 2rem;
+        color: $dark-purple;
+        text-shadow: 3px 3px $electric-lemon;
+        text-align: center;
+    }
+
+    h3 {
+        font-family: $montserrat, sans-serif;
+        font-weight: 700;
+        font-style: italic;
+        border-bottom: 1px solid $electric-pink;
+    }
+
+    h4 {
+        // border-bottom: 1px solid $electric-pink;
+        margin-top: 1.5rem;
+        font-weight: 600;
+        font-family: 'Montserrat';
+    }
+
+}
+
+
 a{
     text-decoration: none;
     color: $electric-pink;
@@ -49,9 +78,9 @@ a:hover {
         -webkit-animation: icon3d 800ms infinite;
             animation: icon3d 800ms infinite;
     }
-    }
+}
 
-    @keyframes icon3d {
+@keyframes icon3d {
     0% {
         text-shadow: 5px 4px $electric-pink, -5px -6px $electric-lemon;
     }
@@ -382,7 +411,28 @@ nav.navbar-light{
 //resume/résumé 
 // ====================================================================================
 
+.resume__job {
+    .resume__subtitle-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        
+        * {
+            font-weight: 600;
+            // outline: hotpink 1px solid;
+        }
+    }
 
+    ul {
+        li {
+            text-align: justify;
+        }
+    }
+
+    p {
+        text-align: justify;
+    }
+}
 
 
 
@@ -409,12 +459,6 @@ section .card img {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 1rem;
-}
-
-h4 {
-    border-bottom: 1px solid $electric-pink;
-    font-weight: 600;
-    font-family: 'Montserrat';
 }
 
 .project-links {
@@ -538,6 +582,16 @@ form#contact-form textarea {
 //media queries 
 // ====================================================================================
 
+@media only screen and (max-width: 500px) {
+    button.button_slide {
+        width: 100%;
+    }
+
+    .title-group {
+        display: block;
+    }
+}
+
 @media only screen and (min-width: 500px) {
     section .title-group h2 {
         text-align: left;
@@ -566,9 +620,10 @@ form#contact-form textarea {
     }
     
     #contact-me ul li {
-        display: inline;
+        // display: inline;
         font-size: 2rem;
-        padding-right: 3rem;
+        // padding-right: 3rem;
+        text-align: center;
     }
 
     #contact-me ul li a {
@@ -582,9 +637,25 @@ form#contact-form textarea {
 
 }
 
+@media only screen and (min-width: 800px) {
+    #contact-me ul li {
+        display: inline;
+        padding-right: 3rem;
+    }
+}
+
 @media only screen and (min-width: 1100px) {
     .heading {
         font-size: 80vh;
+    }
+
+    .icon-3d {
+        padding: 1rem;
+        padding-right: 4rem;
+        padding-left: 4rem;
+
+
+
     }
 }
 
