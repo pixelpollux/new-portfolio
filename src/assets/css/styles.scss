@@ -328,15 +328,26 @@ nav.navbar-light{
 // ====================================================================================
 //sections 
 // ====================================================================================
-section h2 {
-    font-family: $montserrat;
-    text-transform: lowercase;
-    font-weight: 900;
+
+.title-group {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 2rem;
-    font-size: 2rem;
-    color: $dark-purple;
-    text-shadow: 3px 3px $electric-lemon;
-    text-align: center;
+    align-items: flex-end;
+
+    h2 {
+        font-family: $montserrat;
+        text-transform: lowercase;
+        margin-bottom: 0;
+        font-weight: 900;
+        font-size: 2rem;
+        color: $dark-purple;
+        text-shadow: 3px 3px $electric-lemon;
+        text-align: center;
+    }
+    button.button_slide {
+        height: fit-content;
+    }
 }
 
 .content-container {
@@ -362,10 +373,18 @@ section h2 {
 //about me 
 // ====================================================================================
 
-.hide{
+.hide {
     display: none;
     margin-top: 2rem;
 }
+
+// ====================================================================================
+//resume/résumé 
+// ====================================================================================
+
+
+
+
 
 // ====================================================================================
 //projects 
@@ -520,7 +539,7 @@ form#contact-form textarea {
 // ====================================================================================
 
 @media only screen and (min-width: 500px) {
-    section h2 {
+    section .title-group h2 {
         text-align: left;
         font-size: 2.5rem;
     }
@@ -530,7 +549,7 @@ form#contact-form textarea {
         font-size: 50vh;
     }
 
-    section h2 {
+    section .title-group h2 {
         font-size: 3rem;
     }
 

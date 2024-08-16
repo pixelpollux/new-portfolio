@@ -243,15 +243,24 @@ nav.navbar-light {
   color: #EDFF00;
 }
 
-section h2 {
+.title-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  align-items: flex-end;
+}
+.title-group h2 {
   font-family: "Montserrat", sans-serif;
   text-transform: lowercase;
+  margin-bottom: 0;
   font-weight: 900;
-  margin-bottom: 2rem;
   font-size: 2rem;
   color: #330036;
   text-shadow: 3px 3px #EDFF00;
   text-align: center;
+}
+.title-group button.button_slide {
+  height: fit-content;
 }
 
 .content-container {
@@ -396,7 +405,7 @@ form#contact-form textarea {
 }
 
 @media only screen and (min-width: 500px) {
-  section h2 {
+  section .title-group h2 {
     text-align: left;
     font-size: 2.5rem;
   }
@@ -405,7 +414,7 @@ form#contact-form textarea {
   .heading {
     font-size: 50vh;
   }
-  section h2 {
+  section .title-group h2 {
     font-size: 3rem;
   }
   #little-sections section {
