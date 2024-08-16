@@ -225,6 +225,10 @@ nav.navbar-light {
   display: inline-block !important;
 }
 
+.navbar-nav {
+  display: block;
+}
+
 #navbar-content a {
   font-family: "Montserrat", sans-serif;
   font-weight: 600;

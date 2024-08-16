@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Resume from './resume';
 
 export default function SecResume() {
     const [isVisible, setIsVisible] = useState(false);
@@ -20,12 +21,29 @@ export default function SecResume() {
                 <button onClick={handleButton} className="btn button_slide slide_right">
                     {isVisible ? 'Hide résumé' : 'Show résumé'}
                 </button>
+                <button style={{display: "none"}} type="button" target="_blank" className="btn button_slide slide_right">
+                    <a href="">Download pdf</a>
+                </button>
                 {isVisible &&
-                    <div id="extended-bio" className="">
-                        <p>
-                            Résumé
-                        </p>
-                    </div>
+                    <Resume/>
+                    // <div id="extended-bio" className="">
+                    //     <h3>
+                    //         Work Experience
+                    //     </h3>
+                    //     <div className='resume__job'>
+                    //         <h4 className='resume__comp-name'>
+                    //             Company Name
+                    //         </h4>
+                    //         <div className='resume__subtitle-section'>
+                    //             <div className='resume__job-title'>Job Title</div>
+                    //             <div className='resume__job-dates'>Dates</div>
+                    //         </div>
+                    //         <p className='resume__job-description'>
+                    //         Cotton candy muffin bear claw bear claw fruitcake caramels tiramisu danish. Sugar plum powder gummies ice cream liquorice cookie cupcake dragée wafer. Apple pie topping jelly-o jelly-o pie carrot cake sweet.
+                    //         </p>
+                    //     </div>
+
+                    // </div>
                 }
             </section>
         </div>
