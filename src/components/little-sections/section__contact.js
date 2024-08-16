@@ -1,4 +1,4 @@
-function SecContact() {
+function SectionContact() {
     return (
         <div className="section-group" id="contact-link">
             <div className="section-links">
@@ -6,11 +6,13 @@ function SecContact() {
             </div>
             
             <section id="contact-me">
-                <h2>Contact me!</h2>
+                <div className='title-group title-group__resume'>
+                    <h2>Contact me!</h2>
+                </div>
                 <div id="socials" >
                     
                     <div id="iconbox" className="flex-container d-none d-lg-block">
-                        <a href="https://github.com/qualmless">
+                        <a href="https://github.com/pixelpollux">
                             <i className="flex-item fa fa-github fa-4x icon-3d"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/tarajdunmore/">
@@ -31,7 +33,7 @@ function SecContact() {
                                 </a>
                             </li>
                             <li>
-                                <a href="https://github.com/qualmless" target="_blank">
+                                <a href="https://github.com/pixelpollux" target="_blank">
                                     <button className="btn button_slide slide_right">
                                         <i className="fab fa-github"></i> GitHub
                                     </button>
@@ -53,4 +55,4 @@ function SecContact() {
     )
 };
 
-export default SecContact;
+export default SectionContact;
