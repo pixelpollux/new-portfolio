@@ -35,6 +35,7 @@ body,#root {
         margin-bottom: 0;
         font-weight: 900;
         font-size: 2rem;
+        line-height: 2rem;
         color: $dark-purple;
         text-shadow: 3px 3px $electric-lemon;
         text-align: center;
@@ -362,18 +363,8 @@ nav.navbar-light{
     display: flex;
     justify-content: space-between;
     margin-bottom: 2rem;
-    align-items: flex-end;
-
-    h2 {
-        font-family: $montserrat;
-        text-transform: lowercase;
-        margin-bottom: 0;
-        font-weight: 900;
-        font-size: 2rem;
-        color: $dark-purple;
-        text-shadow: 3px 3px $electric-lemon;
-        text-align: center;
-    }
+    align-items: center;
+    
     button.button_slide {
         height: fit-content;
     }
@@ -387,9 +378,7 @@ nav.navbar-light{
     border: $electric-pink 2px solid;
     border-radius: 20px;
     padding: 2rem;
-    padding-top: 3rem;
     margin-top: 4rem;
-    // margin-bottom: 6rem;
     box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.25), 4px 7px 20px rgba(254, 1, 154,.25), ;
 }
 
@@ -589,6 +578,10 @@ form#contact-form textarea {
 
     .title-group {
         display: block;
+
+        h2{
+            margin-bottom: 2rem;
+        }
     }
 }
 
@@ -596,6 +589,7 @@ form#contact-form textarea {
     section .title-group h2 {
         text-align: left;
         font-size: 2.5rem;
+        line-height: 2.5rem;
     }
 }
 @media only screen and (min-width: 600px) {
@@ -605,6 +599,7 @@ form#contact-form textarea {
 
     section .title-group h2 {
         font-size: 3rem;
+        line-height: 3rem;
     }
 
     #little-sections section {
